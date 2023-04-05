@@ -736,6 +736,7 @@ div.compact {
   height: 28px;
   flex: 0 0 auto;
   background-image: url(../images/icons/chevron-right.svg);
+  cursor: pointer;
 }
 
 .expanded {
