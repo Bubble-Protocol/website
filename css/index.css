@@ -683,6 +683,7 @@ div.compact {
   align-items: stretch;
   padding: 0px;
   gap: 64px;
+  margin-bottom: 64px;
 }
 
 @media screen and (max-width: 1060px) {
