@@ -34,6 +34,10 @@ h3 {
   margin: 0;
 }
 
+.light {
+  color: #E1F2FE;
+}
+
 
 /* Mobile Menu */
 
@@ -510,6 +514,16 @@ h3 {
 
 div.compact {
   gap: 32px;
+}
+
+.centered-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  padding: 32px 64px;
+  gap: 32px;
+  flex: 0 1 auto;
 }
 
 .subtle-title {
