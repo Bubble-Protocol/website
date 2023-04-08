@@ -19,8 +19,8 @@
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Major Mono Display" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LeSTW0lAAAAAPHSOMbGylNsXD7evuMBMSRacUsC"></script>
     <script type="application/javascript">fetch('https://vault.bubbleprotocol.com:8125/anonymousCount?page=bubble-protocol-index')</script>
     <script src="js/index.js"></script>
 </head>
@@ -37,8 +37,7 @@
                 <a class="mobile-menu-item" href="#how" onclick="$('#mobile-menu').toggleClass('active')">How it works</a>
                 <a class="mobile-menu-item" href="#uses" onclick="$('#mobile-menu').toggleClass('active')">Use cases</a>
                 <a class="mobile-menu-item" href="#faqs" onclick="$('#mobile-menu').toggleClass('active')">FAQ</a>
-                <br/>
-                <a class="mobile-menu-item" href="mailto://enquiries@bubbleprotocol.com" onclick="$('#mobile-menu').toggleClass('active')">Email Us</a>
+                <a class="mobile-menu-item" href="#contact" onclick="$('#mobile-menu').toggleClass('active')">Contact</a>
             </div>
         </div>
     </div>
@@ -56,6 +55,7 @@
                 <a class="menu-item" href="#how">How it works</a>
                 <a class="menu-item" href="#uses">Use cases</a>
                 <a class="menu-item" href="#faqs">FAQ</a>
+                <a class="menu-item" href="#contact">Contact</a>
             </div>
             <div class="mobile-menubar">
                 <div class="menu-button" onclick="$('#mobile-menu').toggleClass('active')"></div>
@@ -335,6 +335,32 @@
                         </span>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="full-width-content compact light-fill">
+        <div class="contact">
+            <h1>Contact</h1>
+            <div class="mailing-list">
+                <span>Join our mailing list to keep up-to-date with developments.</span>
+                <div class="email-frame">
+                    <div class="h-table">
+                        <input id="email" name="email" class="text-box" type="text" placeholder="Enter Email" onkeyup="validateEmail(event)"></input>
+                        <div id="join-button" class="contact-button disabled" onclick="joinEmailList()">Get Updates</div>
+                        <span id="thankyou-for-joining-text" class="small-text hidden">Thank you!  We'll be in touch soon.</span>
+                        <span id="something-went-wrong-text" class="small-text hidden">Something went wrong. Please try again later.</span>
+                    </div>
+                    <div id="recaptcha-notice" class="recaptcha-notice">
+                        Protected by Google reCAPTCHA<br/>
+                        <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+                        <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+                    </div>
+                </div>
+            </div>
+            <div class="discord-frame">
+                <a target="_blank" href="https://discord.gg/sSnvK5C"><img class="discord-icon" src="images/icons/discord.svg"></a>
+                <span>Or join our <a target="_blank" href="https://discord.gg/sSnvK5C">discord server</a> to get involved.</span>
             </div>
         </div>
     </div>

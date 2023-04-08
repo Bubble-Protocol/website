@@ -206,7 +206,7 @@ h3 {
   display: none;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .menu-button {
     display: block;
   }
@@ -744,8 +744,129 @@ div.compact {
   line-height: 22px;
 }
 
-.hidden {
-  display: none;
+
+/* Contact */
+
+.light-fill {
+  background-color: #C0CDD6;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 48px;
+  margin-bottom: 32px;
+}
+
+.mailing-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 0px;
+  gap: 24px;
+  text-align: center;
+}
+
+.email-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.h-table {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  flex: none;
+  flex-grow: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .h-table {
+    flex-direction: column;
+  }
+}
+
+.text-box {
+  font-size: 16px;
+  line-height: 18px;
+  border-style: 1px solid #7d9aae ;
+  flex: none;
+  flex-grow: 1;
+  padding: 7px;
+  min-width: 240px;
+}
+
+.text-box:focus {
+  outline: none;
+  outline-style: none;
+}
+
+.text-box::placeholder {
+  color: #bababa;
+}
+
+.contact-button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px 24px;
+  gap: 10px;
+  background: #245B82;
+  border-radius: 8px;
+  flex: none;
+  flex-grow: 0;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.contact-button:hover {
+  cursor: pointer;
+}
+
+.small-text {
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  flex: none;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.join-waitlist-button {
+  background-color: #E7AC16;
+}
+
+.recaptcha-notice {
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #9d9d9d;
+}
+
+.recaptcha-notice a, .recaptcha-notice a:visited {
+  color: #9d9d9d;
+  text-decoration: none;
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
+.discord-frame {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
 }
 
 
@@ -811,3 +932,16 @@ div.compact {
   color: #515151;
   flex: 0 1 auto;
 }
+
+
+/* Util classes */
+
+.hidden {
+  display: none;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 50%;
+}
+
