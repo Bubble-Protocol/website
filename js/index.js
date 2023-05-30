@@ -3,14 +3,8 @@ const EMAIL_REGEX = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 
 
 function initialise() {
+  initialiseHeader();
   initialiseFAQExpanders();
-  window.onscroll = function() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-      document.getElementById("header").classList.add('header-scroll');
-    } else {
-      document.getElementById("header").classList.remove('header-scroll');
-    }
-  }
 }
 
 
@@ -22,6 +16,17 @@ function initialiseFAQExpanders() {
       const content = this.nextElementSibling.getElementsByClassName("faq-text")[0];
       content.classList.toggle("hidden");
     });    
+  }
+}
+
+
+function initialiseHeader() {
+  window.onscroll = function() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      document.getElementById("header").classList.add('header-scroll');
+    } else {
+      document.getElementById("header").classList.remove('header-scroll');
+    }
   }
 }
 
@@ -61,22 +66,14 @@ window.validateEmail = validateEmail;
 // CSS functions
 //
 
-function hide(...ids) {
-  ids.forEach(id => { $(id).addClass('hidden') });
-}
-
-function show(...ids) {
-  ids.forEach(id => { $(id).removeClass('hidden') });
-}
-
 function toggleHidden(...ids) {
-  ids.forEach(id => { $(id).toggleClass('hidden') });
+  ids.forEach(id => $(id).toggleClass('hidden'));
 }
 
 function disable(...ids) {
-  ids.forEach(id => { $(id).addClass('disabled') });
+  ids.forEach(id => $(id).addClass('disabled'));
 }
 
 function enable(...ids) {
-  ids.forEach(id => { $(id).removeClass('disabled') });
+  ids.forEach(id => $(id).removeClass('disabled'));
 }
