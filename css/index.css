@@ -444,6 +444,13 @@ h3 {
   border-radius: 10px;
 }
 
+.dapp-image {
+  width: 275px;
+  height: 275px;
+  flex: 0;
+  border: 1px solid #aaa;
+}
+
 .feature-image {
   width: 175px;
   height: 175px;
