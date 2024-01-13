@@ -232,7 +232,7 @@ h3 {
 
 /* Content */
 
-.page {
+#page {
   position: absolute;
   top: 0px;
   height: 100%;
@@ -603,6 +603,22 @@ h3 {
 
 
 /* Animations */
+
+.animate {
+  animation-fill-mode: forwards;
+}
+
+.slide-in-left-on-view {
+  opacity: 0;
+}
+
+.slide-in-left-on-view.animation-active {
+  animation: 1.5s ease-in-out 0s 1 slideInFromLeft;
+}
+
+.animation-active {
+  opacity: 1;
+}
 
 @keyframes slideInFromLeft {
   0% {
