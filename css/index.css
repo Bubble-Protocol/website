@@ -377,6 +377,86 @@ h3 {
 }
 
 
+/* Features */
+
+.features-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1400px;
+  gap: 48px;
+  text-align: center;
+}
+
+.feature-grid {
+  display: flex;
+  padding: 1px 32px;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  align-self: stretch;
+}
+
+.feature-row {
+  display: flex;
+  padding: 32px;
+  align-items: flex-start;
+  gap: 48px;
+  align-self: stretch;
+}
+
+.feature {
+  max-width: 612px;
+  display: flex;
+  padding: 32px 32px 48px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  flex: 1 0 0;
+  border-radius: 32px;
+  background: #FFF;
+  box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.10);
+  overflow-x: hidden;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.feature:hover .feature-image {
+  transform: scale(1.1);
+}
+
+.feature-text {
+  flex: 1;
+  display: flex;
+  padding: 6px 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  align-self: stretch;
+}
+
+.feature-title {
+  flex: 0;
+  color: #000;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.feature-description {
+  flex: 1;
+  color: #4F6F86;
+  text-align: center;
+}
+
+.feature-image {
+  height: 300px;
+  width: auto;
+  transition: transform .8s;
+}
+
 /* Footer */
 
 #footer {
@@ -493,14 +573,14 @@ h3 {
 /* Responsive */
 
 @media screen and (max-width: 1464px) {
-  .header .header-contents, .footer .footer-contents, .hero-section {
+  .header .header-contents, .footer .footer-contents, .hero-section, .features-section {
     max-width: 1200px;
   }
 }
 
 
 @media screen and (max-width: 1264px) {
-  .hero-section, .footer {
+  .hero-section, .features-section, .footer {
     width: 100%;
     padding: 0 32px;
   }
@@ -512,7 +592,84 @@ h3 {
   }
 }
 
+@media screen and (max-width: 1080px) {
+  .hero-section .button-row {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  .hero-section {
+    gap: 16px;
+  }
+  .hero-section .title {
+    font-size: 32px;
+    line-height: 40px;
+  }  
+  .hero-section .subtitle {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .hero-section .button-row {
+    flex-direction: row;
+    gap: 16px;
+  }
+  .cta-button-hollow, .cta-button-solid {
+    font-size: 18px;
+    line-height: 18px;
+    min-width: 120px;
+  }
+  .feature-row {
+    flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 0;
+    align-items: center;
+  }
+  .feature {
+    flex: 1;
+    /* align-self: stretch; */
+    max-width: 512px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .feature-row {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .feature-image {
+    width: 90%;
+    box-sizing: border-box;
+    height: auto;
+  }
+}
+
 @media screen and (max-width: 800px) {
+  .hero-section {
+    display: block;
+    position: relative;
+  }
+  .hero-section .titles {
+    flex: 1;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    padding: 15% 0 30% 0;
+  }
+  .hero-section .hero-image-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    height: 100%;
+  }
+  .hero-section .hero-image {
+    display: block;
+    opacity: 30%;
+    height: 100%;
+    width: auto;
+    transform: translate(20%, 0);
+  }
   .footer .site-map {
     flex-direction: column;
   }
@@ -546,62 +703,6 @@ h3 {
     position: relative;
     width: 80%;
     margin-left: 20%;
-  }
-}
-
-@media screen and (max-width: 1080px) {
-  .hero-section .button-row {
-    flex-direction: column;
-    gap: 16px;
-    align-items: flex-start;
-  }
-  .hero-section {
-    gap: 16px;
-  }
-  .hero-section .title {
-    font-size: 32px;
-    line-height: 40px;
-  }  
-  .hero-section .subtitle {
-    font-size: 22px;
-    line-height: 30px;
-  }
-  .hero-section .button-row {
-    flex-direction: row;
-    gap: 16px;
-  }
-  .cta-button-hollow, .cta-button-solid {
-    font-size: 18px;
-    line-height: 18px;
-    min-width: 120px;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .hero-section {
-    display: block;
-    position: relative;
-  }
-  .hero-section .titles {
-    flex: 1;
-    position: relative;
-    width: 100%;
-    z-index: 1;
-    padding: 15% 0 30% 0;
-  }
-  .hero-section .hero-image-frame {
-    position: absolute;
-    top: 0;
-    left: 0;
-    max-width: 100%;
-    height: 100%;
-  }
-  .hero-section .hero-image {
-    display: block;
-    opacity: 30%;
-    height: 100%;
-    width: auto;
-    transform: translate(20%, 0);
   }
 }
 
