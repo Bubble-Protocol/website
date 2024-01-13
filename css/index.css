@@ -48,7 +48,7 @@ h3 {
   align-items: center;
   background-color: white;
   transform: translate3D(100%, 0, 0);
-  color: #f2f2f2;
+  color: #1E313E;
   display: flex;
   visibility: hidden;
   flex-direction: column;
@@ -57,7 +57,7 @@ h3 {
   position: absolute;
   top: 0;
   width: 100vw;
-  z-index: 2000;
+  z-index: 3;
   overflow: hidden;
   position: fixed;
   box-shadow: 0px -2px 2px 1px rgba(0,0,0,0.2);
@@ -105,13 +105,23 @@ h3 {
   gap: 16px;
 }
 
-.mobile-menuitem {
+.mobile-menu-heading {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 42px;
+  color: #3d4042;
+  flex: 0 1 auto;
+  padding-top: 24px;
+}
+
+.mobile-menu-item {
   font-weight: 400;
   font-size: 18px;
-  line-height: 18px;
+  line-height: 36px;
   color: #3d4042;
   flex: 0 1 auto;
   cursor: pointer;
+  padding-left: 16px;
 }
 
 
@@ -203,6 +213,7 @@ h3 {
   flex-direction: column;
   align-items: stretch;
   min-width: 160px;
+  background-color: #fff;
   box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.2);
   border-radius: 8px;
   padding: 8px 0;
@@ -356,6 +367,7 @@ h3 {
   align-items: flex-start;
   gap: 32px;
   flex: 1 0 0;
+  z-index: 1;
 }
 
 .section-title {
@@ -534,7 +546,6 @@ h3 {
     position: relative;
     width: 80%;
     margin-left: 20%;
-    z-index: 2;
   }
 }
 
