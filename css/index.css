@@ -51,6 +51,13 @@ h3 {
   color: #686666;
 }
 
+.section-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
 
 /* Mobile Menu */
 
@@ -536,6 +543,30 @@ h3 {
 }
 
 
+/* Governance Section */
+
+.governance-section {
+  display: flex;
+  box-sizing: border-box;
+  width: 1024px;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+
+.governance-section .section-text {
+  flex: 1;
+  box-sizing: border-box;
+  width: 60%;
+  z-index: 1;
+}
+
+.governance-section .governance-image {
+  flex: 1;
+  width: 30%;
+}
+
+
 /* Footer */
 
 #footer {
@@ -712,6 +743,10 @@ h3 {
     max-width: 512px;
     width: auto;
   }
+  .governance-section {
+    width: 100%;
+    padding: 0 32px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -760,6 +795,17 @@ h3 {
   }
   .page-width-section section-text.left {
     padding-left: 32px;
+  }
+  .governance-section {
+    flex-direction: column-reverse;
+    padding: 0 16px;
+    gap: 16px;
+  }
+  .governance-section .section-text {
+    width: 100%;
+  }
+  .governance-section .governance-image {
+    width: 80%;
   }
 }
 
