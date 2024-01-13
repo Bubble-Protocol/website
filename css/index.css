@@ -118,6 +118,9 @@ h3 {
 /* Header */
 
 .header {
+  opacity: 0;
+  animation: 1.5s ease-in-out 0.5s 1 slideInFromTop;
+  animation-fill-mode: forwards;
   position: absolute;
   top: 0;
   display: flex;
@@ -238,7 +241,7 @@ h3 {
   width: 100%;
   overflow-x: hidden;
   overflow-y: scroll;
-  padding: 76px 32px 0;
+  padding-top: 76px;
   flex-direction: column;
   align-items: center;
   gap: 128px;
@@ -281,6 +284,9 @@ h3 {
 }
 
 .hero-section .titles {
+  opacity: 0;
+  animation: 1.5s ease-in-out 0.5s 1 slideInFromLeft;
+  animation-fill-mode: forwards;
   flex: 0 0 48%;
   width: 48%;
   display: flex;
@@ -312,6 +318,9 @@ h3 {
 }
 
 .hero-section .hero-image-frame {
+  opacity: 0;
+  animation: 2s ease-in-out 0.5s 1 slideInFromRight;
+  animation-fill-mode: forwards;
   flex: 0 0 48%;
   max-width: 48%;
 }
@@ -319,6 +328,36 @@ h3 {
 .hero-section .hero-image {
   width: 100%;
   height: auto;
+}
+
+
+/* Text Sections */
+
+.full-width-section {
+  display: flex;
+  align-items: center;
+}
+
+.full-width-section .section-image {
+  flex: 1 0 40%;
+  max-width: 40%;
+  height: auto;
+}
+
+.full-width-section .section-text {
+  flex: 1 0 60%;
+  display: flex;
+  padding-right: 15%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  flex: 1 0 0;
+}
+
+.section-title {
+  color: #000;
+  font-size: 40px;
+  line-height: 46px; /* 115% */
 }
 
 
@@ -445,14 +484,18 @@ h3 {
 
 
 @media screen and (max-width: 1264px) {
-  .hero-section {
+  .hero-section, .footer {
     width: 100%;
+    padding: 0 32px;
   }
 }
 
 @media screen and (max-width: 800px) {
   .footer .site-map {
     flex-direction: column;
+  }
+  .full-width-section .section-text {
+    padding-right: 32px;
   }
 }
 
@@ -462,6 +505,26 @@ h3 {
   }
   .header .mobile-menubar {
     display: flex;
+  }
+  .full-width-section {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+  .full-width-section .section-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    max-width: 100%;
+    height: 100%;
+  }
+  .full-width-section .section-text {
+    box-sizing: border-box;
+    position: relative;
+    width: 80%;
+    margin-left: 20%;
+    z-index: 2;
   }
 }
 
@@ -494,15 +557,13 @@ h3 {
 }
 
 @media screen and (max-width: 800px) {
-  .page {
-    padding: 76px 16px;
-  }
   .hero-section {
     display: block;
     position: relative;
   }
   .hero-section .titles {
     flex: 1;
+    position: relative;
     width: 100%;
     z-index: 1;
     padding: 15% 0 30% 0;
@@ -523,6 +584,48 @@ h3 {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .hero-section, .footer, .header {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+
+/* Animations */
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 
 
 /* Util classes */
