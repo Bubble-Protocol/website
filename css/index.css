@@ -355,6 +355,7 @@ table .logo {
 }
 
 .cta-button-hollow {
+  padding: 6px 14px;
   border: 2px solid #00D0FF;
 }
 
