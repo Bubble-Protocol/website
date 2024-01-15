@@ -567,6 +567,63 @@ h3 {
 }
 
 
+/* Learn Page Hero */
+
+.hero-section .learn-hero-image-frame {
+  flex: 0 0 48%;
+  max-width: 48%;
+  position: relative;
+  opacity: 0;
+  animation: 1s ease-in-out 0.5s 1 slideInFromRight;
+  animation-fill-mode: forwards;
+}
+
+.hero-section .bubble1 {
+  position: absolute;
+  box-sizing: border-box;
+  width: 10%;
+  left: 14.5%;
+  bottom: 55.5%;
+  opacity: 0;
+  animation: 1.5s ease-in-out 1s 1 slideInFromTop200, 7s ease-in-out 2.5s infinite float;
+  animation-fill-mode: forwards;
+}
+
+.hero-section .bubble2 {
+  position: absolute;
+  box-sizing: border-box;
+  width: 9%;
+  left: 30.5%;
+  bottom: 66%;
+  opacity: 0;
+  animation: 1.5s ease-in-out 1.2s 1 slideInFromTop200, 6s ease-in-out 2.7s infinite float;
+  animation-fill-mode: forwards;
+}
+
+.hero-section .bubble3 {
+  position: absolute;
+  box-sizing: border-box;
+  width: 15%;
+  left: 58.1%;
+  bottom: 42.2%;
+  opacity: 0;
+  animation: 1.5s ease-in-out 1.4s 1 slideInFromTop200, 5.5s ease-in-out 2.9s infinite float;
+  animation-fill-mode: forwards;
+}
+
+.hero-section .bubble4 {
+  position: absolute;
+  box-sizing: border-box;
+  width: 10%;
+  left: 75.8%;
+  bottom: 55.5%;
+  opacity: 0;
+  animation: 1.5s ease-in-out 1.6s 1 slideInFromTop200, 6.5s ease-in-out 3.1s infinite float;
+  animation-fill-mode: forwards;
+}
+
+
+
 /* Footer */
 
 #footer {
@@ -773,19 +830,18 @@ h3 {
     z-index: 1;
     padding: 15% 0 30% 0;
   }
-  .hero-section .hero-image-frame {
+  .hero-section .hero-image-frame, .hero-section .learn-hero-image-frame {
     position: absolute;
     top: 0;
-    left: 0;
+    opacity: 30%;
+    left: 20%;
     max-width: 100%;
     height: 100%;
   }
   .hero-section .hero-image {
-    display: block;
-    opacity: 30%;
     height: 100%;
     width: auto;
-    transform: translate(20%, 0);
+    opacity: 30%;
   }
   .footer .site-map {
     flex-direction: column;
@@ -895,8 +951,40 @@ h3 {
     opacity: 0;
   }
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@keyframes slideInFromTop200 {
+  0% {
+    transform: translateY(-200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20%);
+  }
+  100% {
+    transform: translateY(0%);
   }
 }
 
