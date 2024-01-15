@@ -41,6 +41,34 @@ li {
   padding-bottom: 20px;
 }
 
+table {
+  border: 2px solid var(--high-contrast, #1E313E);
+  border-collapse: collapse;
+  overflow-x: scroll;
+}
+
+th {
+  margin: auto;
+  text-align: center;
+  align-content: center;
+}
+
+td, th {
+  border: 1px solid var(--Disabled, #BEC9C7);
+  padding: 4px 8px;
+}
+
+.table-container {
+  overflow-x: scroll;
+}
+
+table .logo {
+  width: auto;
+  height: 36px;
+  margin: auto;
+  padding-top: 4px;
+}
+
 .light {
   color: #E1F2FE;
 }
