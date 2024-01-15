@@ -37,6 +37,10 @@ h3 {
   margin: 0;
 }
 
+li {
+  padding-bottom: 20px;
+}
+
 .light {
   color: #E1F2FE;
 }
