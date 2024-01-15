@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bubble Protocol" />
+    <meta name="keywords" content="bubble protocol, web3, smart contract, smart data access, control of data, quality of data, data privacy, privacy technology, data sovereignty, data security, data protection, gdpr, compliance, consent management, cmp" />
+    <meta name="author" content="Bubble Protocol" />
+    <title>Bubble</title>
+    <meta property="og:title" content="Bubble Protocol">
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Enabling blockchains to control private data">
+    <meta property="og:image" content="https://bubbleprotocol.com/images/bubble-protocol-web-image.png">
+    <meta property="og:url" content="https://bubbleprotocol.com">
+    <meta name="twitter:card" content="summary_large_image">    <meta charset="utf-8" />
+    <meta property="og:site_name" content="Bubble Protocol">
+    <meta name="twitter:image:alt" content="Bubble Protocol">
+    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Avenir" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js?render=6LeSTW0lAAAAAPHSOMbGylNsXD7evuMBMSRacUsC"></script> -->
+    <!-- <script type="application/javascript">fetch('https://vault.bubbleprotocol.com:8125/anonymousCount?page=bubble-protocol-how-it-works')</script> -->
+    <script src="js/index.js"></script>
+</head>
+<body>
+
+    <div id="header"></div>
+
+    <div id="page">
+
+        <div class="hero-section">
+            <div class="titles">
+                <span class="title">
+                  How Does Bubble Protocol Work?
+                </span>
+                <div class="button-row">
+                  <a href="docs/whitepaper.pdf" target="_blank"><div class="cta-button-hollow">White Paper</div></a>
+                  <a href="https://github.com/Bubble-Protocol/bubble-sdk" target="_blank"><div class="cta-button-solid">Start Building</div></a>
+                </div>
+            </div>
+            <div class="learn-hero-image-frame">
+                <img class="hero-image" src="images/learn-hero.png" alt="hero">
+                <img class="bubble1" src="images/bubble1.png" alt="bubble">
+                <img class="bubble2" src="images/bubble2.png" alt="bubble">
+                <img class="bubble3" src="images/bubble3.png" alt="bubble">
+                <img class="bubble4" src="images/bubble4.png" alt="bubble">
+            </div>
+        </div>
+
+        <div class="page-width-section center">
+          <span class="quote"><i>Off-Chain Storage With On-Chain Permissions</i></span>
+        </div>
+
+        <div class="page-width-section">
+          <span class="section-title">Bubbles</span>
+          <div class="section-paragraphs">
+            <p>
+              Bubble Protocol stores content in off-chain bubbles. A bubble is a secure vault containing files and directories whose access permissions are managed by a smart contract.  The bubble itself is hosted by a provider chosen by the user. Whenever content is requested from the bubble, the provider checks the access permissions from the smart contract, only permitting the request if the requester has the appropriate permissions. 
+            </p>
+            <p>
+              The smart contract for a bubble is designed specifically for each use case and can be as simple or as complex as needed to control the content throughout its life.  Once the smart contract indicates the bubble has been terminated, the off-chain bubble is ‘popped’ and all its content is deleted.
+            </p>
+          </div>
+          <img class="centered-image" src="images/bubble-diagram.png" alt="bubble diagram">
+        </div>
+
+        <div class="page-width-section">
+          <span class="section-title">Permissions</span>
+          <div class="section-paragraphs">
+            <p>
+              Each bubble is uniquely identified by its smart contract address, blockchain id and host provider.  Each piece of content hosted by the protocol is uniquely identified by its bubble id and 32-byte file id (often the file id is defined as the content hash).  The smart contract specifies separate <code>read/write/append/execute</code> permissions for each user address and 32-byte file id.  This way each file can have different access permissions for every user.
+            </p>
+            <p>
+              Any smart contract can be used to control a bubble provided it implements the following interface:
+            </p>
+          </div>
+          <img class="code-block-image" src="images/access-control-contract-code.png" alt="code">
+          <div class="button-row">
+            <a href="https://github.com/Bubble-Protocol/bubble-sdk/tree/main/contracts/examples" target="_blank"><div class="cta-button-hollow">Example Contracts</div></a>
+          </div>
+        </div>
+
+        <div class="page-width-section">
+          <span class="section-title">Bubble Providers</span>
+          <div class="section-paragraphs">
+            <p>Bubbles are stored on a provider of the user’s choosing. Providers can be public, restricted or private.</p>
+            <ul>
+              <li><b>Public providers</b> are designed to be generic hosts, capable of hosting any bubble for any application. Forthcoming Bubble payment contracts will allow providers to earn rewards for providing storage to general users.  See the Tokenomics White Paper.</li>
+              <li><b>Restricted providers</b> are public providers that restrict the type of bubble that can be deployed, only allowing bubbles managed by certain types of smart contract.</li>
+              <li><b>Private providers</b> restrict access to authorised users only. Examples are: </li>
+              <ul>
+                <li><b>Home providers</b> used only by family and friends.</li>
+                <li><b>Company providers</b> used by registered customers, employees and suppliers.</li>
+              </ul>
+            </ul>
+            <p>
+              Anyone can become a bubble provider by deploying a server running Bubble Protocol’s Guardian software or by integrating the Guardian into existing infrastructure.
+              The Guardian acts as a gateway to the underlying bubble storage layer, authorising requests based on the permissions defined in the bubble’s smart contract.
+              The Guardian does not specify the underlying storage mechanism so can be used with file systems, databases, decentralised storage networks, content delivery networks and other infrastructure.
+            </p>
+          </div>
+          <div class="button-row">
+            <a href="https://github.com/Bubble-Protocol/bubble-sdk/tree/main/packages/server" target="_blank"><div class="cta-button-hollow">Deploy Your Own</div></a>
+          </div>
+        </div>
+
+        <div class="page-width-section">
+          <span class="section-title">The Bubble Network</span>
+          <p>
+            The Bubble Network is a decentralised peer-to-peer network currently under construction.
+            This will act like IPFS but with access controls and token-based payment contracts.
+            The Bubble Network aims to provide a fully decentralised option for bubble storage running alongside other bubble providers.
+          </p>
+        </div>
+
+        <div class="button-row">
+          <a href="https://github.com/Bubble-Protocol/bubble-sdk" target="_blank"><div class="cta-button-solid">Start Building</div></a>
+          <a href="docs/whitepaper.pdf" target="_blank"><div class="cta-button-hollow">White Paper</div></a>
+        </div>
+
+        <div id="footer"></div>
+
+    </div>
+    
+
+</body>
+</html>
+

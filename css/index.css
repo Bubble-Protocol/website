@@ -37,6 +37,10 @@ h3 {
   margin: 0;
 }
 
+p {
+  margin: 0;
+}
+
 li {
   padding-bottom: 20px;
 }
@@ -90,6 +94,27 @@ table .logo {
   gap: 32px;
 }
 
+.section-paragraphs {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.centered-image {
+  align-self: center;
+  width: 640px;
+  height: auto;
+  box-sizing: border-box;
+  max-width: 80%;
+}
+
+.code-block-image {
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 1024px;
+}
 
 /* Mobile Menu */
 
@@ -683,6 +708,13 @@ table .logo {
 }
 
 
+/* How It Works Page */
+
+.quote {
+  color: var(--mid-contrast, #686666);
+  font-size: 32px;
+  line-height: 42px;
+}
 
 /* Footer */
 
