@@ -390,33 +390,33 @@ h3 {
 
 /* Features */
 
-.features-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 1400px;
-  gap: 48px;
-  text-align: center;
-}
-
 .feature-grid {
   display: flex;
-  padding: 1px 32px;
   flex-direction: column;
   align-items: center;
   gap: 48px;
   align-self: stretch;
 }
 
-.feature-row {
+.feature-dual-row {
   display: flex;
-  padding: 32px;
   align-items: flex-start;
   gap: 48px;
-  align-self: stretch;
 }
 
-.feature {
+.indent-with-feature {
+  margin-left: 24px;
+}
+
+.feature-row, .slim-feature-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 48px;
+  max-width: 100%;
+  height: 100%;
+}
+
+.feature, .slim-feature {
   max-width: 612px;
   display: flex;
   padding: 32px 32px 48px;
@@ -454,6 +454,21 @@ h3 {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+
+.feature-icon {
+  width: 48px;
+  height: 48px;
+  align-self: flex-start;
+}
+
+.feature-highlight-title {
+  color: #1869C4;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+  align-self: flex-start;
 }
 
 .feature-description {
@@ -502,11 +517,18 @@ h3 {
 /* Page Width Sections */
 
 .page-width-section {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  box-sizing: border-box;
   width: 100%;
-  min-height: 600px;
+  /* min-height: 600px; */
   max-width: 1400px;
   position: relative;
+}
+
+.page-width-section.block {
+  display: block;
 }
 
 .page-width-section .section-image {
@@ -739,17 +761,18 @@ h3 {
 
 /* Responsive */
 
-@media screen and (max-width: 1464px) {
-  .header .header-contents, .footer .footer-contents, .hero-section, .features-section {
+@media screen and (max-width: 1512px) {
+  .header .header-contents, .footer .footer-contents, .hero-section, .page-width-section {
     max-width: 1200px;
   }
 }
 
 
-@media screen and (max-width: 1264px) {
-  .hero-section, .features-section, .footer {
+@media screen and (max-width: 1312px) {
+  .hero-section, .page-width-section, .footer {
+    box-sizing: border-box;
     width: 100%;
-    padding: 0 32px;
+    padding: 0 56px;
   }
   .full-width-section {
     gap: 0;
@@ -763,6 +786,10 @@ h3 {
 }
 
 @media screen and (max-width: 1080px) {
+  .section-title {
+    font-size: 32px;
+    line-height: 40px;
+  }  
   .hero-section .button-row {
     flex-direction: column;
     gap: 16px;
@@ -788,33 +815,31 @@ h3 {
     line-height: 18px;
     min-width: 120px;
   }
+  .feature-dual-row {
+    flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 0;
+    align-items: center;
+  }
   .feature-row {
     flex-direction: column;
     padding-top: 0;
     padding-bottom: 0;
     align-items: center;
   }
-  .feature {
-    flex: 1;
-    /* align-self: stretch; */
-    max-width: 512px;
-    width: auto;
-  }
-  .governance-section {
-    width: 100%;
-    padding: 0 32px;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .feature-row {
+  .feature-grid {
     padding-left: 0;
     padding-right: 0;
   }
-  .feature-image {
-    width: 90%;
-    box-sizing: border-box;
+  .feature {
+    flex: 1 1 auto;
+    max-width: 512px;
+    width: auto;
     height: auto;
+  }
+  .governance-section {
+    width: 100%;
+    padding: 0 56px;
   }
 }
 
@@ -866,6 +891,9 @@ h3 {
 }
 
 @media screen and (max-width: 640px) {
+  .hero-section, .page-width-section, .footer {
+    padding: 0 32px;
+  }
   .header .menubar {
     display: none;
   }
@@ -895,10 +923,39 @@ h3 {
     width: 100%;
     padding: 0 16px;
   }
+  .feature-dual-row {
+    gap: 48px;
+  }
+  .indent-with-feature {
+    margin-left: 0;
+  }
+  .slim-feature-row {
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+  }
+  .slim-feature {
+    flex: 1 1 auto;
+    max-width: 512px;
+    width: auto;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .feature-row {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .feature-image {
+    width: 90%;
+    box-sizing: border-box;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 480px) {
-  .hero-section, .footer, .header {
+  .hero-section, .page-width-section, .feature-grid, .footer, .header {
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -1004,3 +1061,8 @@ h3 {
   opacity: 50%;
 }
 
+.center {
+  align-self: center;
+  align-items: center;
+  text-align: center;
+}
