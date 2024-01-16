@@ -220,7 +220,7 @@ table .logo {
 
 .header-contents {
   display: flex;
-  width: 1440px;
+  width: 1400px;
   justify-content: center;
   align-items: stretch;  
 }
@@ -368,18 +368,29 @@ table .logo {
   align-items: center;
   gap: 4%;
   box-sizing: border-box;
+  overflow: hidden;
+}
+
+.hero-section.homepage {
+  background: linear-gradient(180deg, #00BAE1 0%, #008BC0 42.94%, #0080B8 55.74%);
+  min-height: 672px;
 }
 
 .hero-section .titles {
   opacity: 0;
   animation: 1.5s ease-in-out 0.5s 1 slideInFromLeft;
   animation-fill-mode: forwards;
+  box-sizing: border-box;
   flex: 0 0 48%;
   width: 48%;
   display: flex;
   flex-direction: column;
   align-items: stretch;
   gap: 24px;
+}
+
+.hero-section.homepage .titles {
+  padding-left: 48px;
 }
 
 .hero-section .title {
@@ -391,8 +402,12 @@ table .logo {
   line-height: 48px;
 }
 
+.hero-section.homepage .title, .hero-section.homepage .subtitle {
+  color: #1E313E;
+}
+
 .hero-section .title .highlight {
-  color: #00D0FF;
+  color: #fff;
 }
 
 .hero-section .subtitle {
@@ -410,11 +425,11 @@ table .logo {
   animation-fill-mode: forwards;
   flex: 0 0 48%;
   max-width: 48%;
+  display: flex;
 }
 
 .hero-section .hero-image {
   width: 100%;
-  height: auto;
 }
 
 
@@ -836,6 +851,15 @@ table .logo {
   .header .header-contents, .footer .footer-contents, .hero-section, .page-width-section {
     max-width: 1200px;
   }
+  .hero-section.homepage {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+  }
+  .hero-section.homepage .hero-image-frame {
+    height: 100%;
+    min-width: 672px;
+  }
 }
 
 
@@ -933,6 +957,12 @@ table .logo {
     left: 20%;
     max-width: 100%;
     height: 100%;
+  }
+  .hero-section.homepage {
+    min-height: 440px;
+  }
+  .hero-section.homepage .titles {
+    padding-left: 0;
   }
   .hero-section .hero-image {
     height: 100%;
