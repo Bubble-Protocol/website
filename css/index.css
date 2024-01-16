@@ -220,7 +220,7 @@ table .logo {
 
 .header-contents {
   display: flex;
-  width: 1400px;
+  width: 100%;
   justify-content: center;
   align-items: stretch;  
 }
@@ -368,12 +368,12 @@ table .logo {
   align-items: center;
   gap: 4%;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 .hero-section.homepage {
   background: linear-gradient(180deg, #00BAE1 0%, #008BC0 42.94%, #0080B8 55.74%);
-  min-height: 672px;
+  min-height: 80%;
+  width: 100%;
 }
 
 .hero-section .titles {
@@ -425,11 +425,18 @@ table .logo {
   animation-fill-mode: forwards;
   flex: 0 0 48%;
   max-width: 48%;
+  height: 100%;
   display: flex;
+  overflow: hidden;
 }
 
 .hero-section .hero-image {
   width: 100%;
+}
+
+.hero-section.homepage .hero-image {
+  width: calc(max(80vh, 48vw));
+  height: calc(max(80vh, 48vw));
 }
 
 
@@ -968,6 +975,10 @@ table .logo {
     height: 100%;
     width: auto;
   }
+  .hero-section.homepage .hero-image {
+    width: 440px;
+    height: 440px;
+  }  
   .footer .site-map {
     flex-direction: column;
   }
