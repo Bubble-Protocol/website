@@ -227,7 +227,7 @@ table .logo {
 
 .header .logo, .header menu-icon {
   flex: 0;
-  width: 40px;
+  width: auto;
   height: 40px;
 }
 
@@ -815,7 +815,7 @@ table .logo {
 
 .footer .logo {
   flex: 0;
-  width: 28px;
+  width: auto;
   height: 28px;
   filter: grayscale(100%);
 }
