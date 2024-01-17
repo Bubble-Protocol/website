@@ -25,6 +25,10 @@ a, a:visited {
   text-decoration: none;
 }
 
+a.image-link {
+  line-height: 0;
+}
+
 h1 {
   font-size: 32px;
   line-height: 40px;
@@ -228,7 +232,7 @@ table .logo {
 .header .logo, .header menu-icon {
   flex: 0;
   width: auto;
-  height: 44px;
+  height: 40px;
 }
 
 .header .menubar, .header .mobile-menubar {
