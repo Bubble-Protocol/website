@@ -228,7 +228,7 @@ table .logo {
 .header .logo, .header menu-icon {
   flex: 0;
   width: auto;
-  height: 40px;
+  height: 44px;
 }
 
 .header .menubar, .header .mobile-menubar {
