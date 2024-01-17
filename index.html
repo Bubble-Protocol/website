@@ -4,426 +4,183 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Bubble Protocol" />
-    <meta name="keywords" content="bubble protocol, web3, smart contract, smart data access, control of data, quality of data, data privacy, privacy technology, data sovereignty, data security, data protection, gdpr, compliance, consent management, cmp" />
+    <meta name="keywords" content="bubble protocol, web3, off-chain storage, smart contract, smart data access, control of data, quality of data, data privacy, privacy technology, data sovereignty, data security, data protection, gdpr, compliance, consent management, cmp" />
     <meta name="author" content="Bubble Protocol" />
     <title>Bubble</title>
     <meta property="og:title" content="Bubble Protocol">
     <meta property="og:type" content="website" />
-    <meta property="og:description" content="Enabling blockchains to control private data">
+    <meta property="og:description" content="Private off-chain storage layer with on-chain security">
     <meta property="og:image" content="https://bubbleprotocol.com/images/bubble-protocol-web-image.png">
     <meta property="og:url" content="https://bubbleprotocol.com">
     <meta name="twitter:card" content="summary_large_image">    <meta charset="utf-8" />
     <meta property="og:site_name" content="Bubble Protocol">
     <meta name="twitter:image:alt" content="Bubble Protocol">
-    <link rel="shortcut icon" href="images/icons/logo.svg">
+    <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Avenir" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js?render=6LeSTW0lAAAAAPHSOMbGylNsXD7evuMBMSRacUsC"></script>
     <script type="application/javascript">fetch('https://vault.bubbleprotocol.com:8125/anonymousCount?page=bubble-protocol-index')</script>
     <script src="js/index.js"></script>
 </head>
-<body id="home">
+<body>
 
-    <div id="mobile-menu">
-        <div class="mobile-menu-header">
-            <div class="mobile-menu-close-button" onclick="$('#mobile-menu').toggleClass('active')"></div>
-        </div>
-        <div class="mobile-menu-content">
-            <div class="mobile-menuitems">
-                <a class="mobile-menu-item" href="#home" onclick="$('#mobile-menu').toggleClass('active')">Home</a>
-                <a class="mobile-menu-item" href="#features" onclick="$('#mobile-menu').toggleClass('active')">Key Features</a>
-                <a class="mobile-menu-item" href="#how" onclick="$('#mobile-menu').toggleClass('active')">How it works</a>
-                <a class="mobile-menu-item" href="#uses" onclick="$('#mobile-menu').toggleClass('active')">Use cases</a>
-                <a class="mobile-menu-item" href="#faqs" onclick="$('#mobile-menu').toggleClass('active')">FAQ</a>
-                <a class="mobile-menu-item" href="#contact" onclick="$('#mobile-menu').toggleClass('active')">Contact</a>
-            </div>
-        </div>
-    </div>
-     
-    <div id="header" class="header">
-        <div class="navigation-menu">
-            
-            <div class="logo">
-                <div class="logo-image"></div>
-                <span class="logo-text">Bubble</span>
-            </div>
-            <div class="menubar">
-                <a class="menu-item" href="#home">Home</a>
-                <a class="menu-item" href="#features">Key Features</a>
-                <a class="menu-item" href="#how">How it works</a>
-                <a class="menu-item" href="#uses">Use cases</a>
-                <a class="menu-item" href="#faqs">FAQ</a>
-                <a class="menu-item" href="#contact">Contact</a>
-            </div>
-            <div class="mobile-menubar">
-                <div class="menu-button" onclick="$('#mobile-menu').toggleClass('active')"></div>
-            </div>
-        </div>
-    </div>
+    <div id="header"></div>
 
-    <div class="hero-section">
-        <div class="bubble-overlay"></div>
-        <div class="hero-snake"></div>
-        <div class="hero-steel"></div>
-        <div class="hero-titles-frame">
-            <span class="hero-title">
-                Protecting sensitive data on a decentralised web
-            </span>
-            <div class="hero-h-line"></div>
-            <span class="hero-subtitle">
-                Bubble Protocol enables blockchains to control and govern private off-chain data.
-            </span>
-        </div>
-    </div>
+    <div id="page">
 
-    <div class="full-width-content">
-        <div class="page-width-content">
-            <div class="section">
-                <h1>Your data, your rules.</h1>
-                <span>
-                    Over the past three decades the centralized structure of the web has significantly compromised our privacy. 
-                    Cyberattacks, data trading, and data harvesting all pose serious threats to our individual autonomy.
+        <div class="hero-section homepage">
+            <div class="titles">
+                <span class="title">
+                    Empower Your <span class="highlight">Web3</span> Development with <span class="highlight">Bubble Protocol</span>
                 </span>
-                <span>
-                    Web 3.0 has a vision to transform the underlying architecture of the web, decentralising services and returning control of personal data to users.  
-                    It’s goal is simple: your data, your rules.
+                <span class="subtitle">
+                    Private Off-Chain Data Management with On-Chain Security
                 </span>
-                <span>
-                    Towards this goal, Bubble Protocol is developing critical infrastructure to integrate private user data into decentralised applications in a way that is both secure and simple to use, while unlocking a multitude of innovation possibilities.
-                </span>
-                <br/>
-                <h3>Bubble Protocol creates a bridge between Web3 and private data.</h3>
-                <span>
-                    Bubble is an open source protocol that lets blockchains control and govern private data held off-chain. 
-                    It allows on-chain smart contracts to directly control access to off-chain data, whether held on cloud servers, decentralised storage networks or private company databases.
-                </span>
+                <div class="button-row">
+                    <a href="learn.html"><div class="cta-button-solid">Get Started</div></a>
+                    <a href="#use-cases"><div class="cta-button-solid">Explore Uses</div></a>
+                </div>
+            </div>
+            <div class="hero-image-frame">
+                <img class="hero-image" src="images/hero.png" alt="hero">
             </div>
         </div>
-    </div>
 
-    <div id="features" class="full-width-content gradient-fill">
-        <h1 class="light">Key Features</h1>
-        <div class="feature-cards">
-            <div class="feature-card">
-                <img class="feature-image" src="images/feature-storage.png">
-                <span class="feature-title">Secure Off-chain Storage</span>
-                <span class="feature-description">Private data is held in a protective ‘bubble’ on a secure relay server of the user’s choosing.</span>
-            </div>
-            <div class="feature-card">
-                <img class="feature-image" src="images/feature-control.png">
-                <span class="feature-title">On-Chain Access Controls</span>
-                <span class="feature-description">Each bubble is protected by a smart contract, which defines who can access what data under what conditions and acts as a service level agreement.</span>
-            </div>
-            <div class="feature-card">
-                <img class="feature-image" src="images/feature-customisable.png">
-                <span class="feature-title">Fully Customisable</span>
-                <span class="feature-description">A bubble smart contract is fully customisable by the developer, enabling a wide range of use cases and applications.</span>
+        <div class="full-width-section">
+            <img class="section-image animate slide-in-left-on-view" src="images/hand.png" alt="hand">
+            <div class="section-text">
+                <span class="section-title">Putting users in control of their data</span>
+                <span>Bubble Protocol brings private data to decentralised applications, enabling Web3 privacy innovation for developers and businesses. </span>
+                <div class="cta-button-hollow">White Paper</div>
             </div>
         </div>
-    </div>
 
-    <div id="how" class="full-width-content">
-        <div class="page-width-content">
-            <h1>How It Works</h1>
-            <span class="center">Bubble protocol is designed for developers of decentralised applications and companies looking to move into Web3.</span>
-            <div class="steps">
-                <div class="step">
-                    <span class="step-heading">Step 1</span>
-                    <span class="step-content">Choose a smart contract to govern your data. *</span>
+        <div id="use-cases" class="page-width-section center">
+            <span class="section-title">Unlocking Innovation Across Industries</span>
+            <div class="feature-grid">
+                <div class="feature-row">
+                    <div class="feature">
+                        <div class="feature-text">
+                            <span class="feature-title">Decentralised Applications</span>
+                            <span class="feature-description">Private data storage and cross-device synchronisation</span>
+                        </div>
+                        <img class="feature-image" src="images/feature-dapps.png" alt="">
+                    </div>
+                    <div class="feature">
+                        <div class="feature-text">
+                            <span class="feature-title">Privacy Innovation</span>
+                            <span class="feature-description">Use the power of smart contracts to share access to private off-chain data</span>
+                        </div>
+                        <img class="feature-image" src="images/feature-innovation.png" alt="">
+                    </div>
                 </div>
-                <div class="step">
-                    <span class="step-heading">Step 2</span>
-                    <span class="step-content">Deploy your smart contract to the blockchain of your choice.</span>
-                </div>
-                <div class="step">
-                    <span class="step-heading">Step 3</span>
-                    <span class="step-content">Create your bubble on a relay server of your choice. †</span>
-                </div>
-                <div class="step">
-                    <span class="step-heading">Step 4</span>
-                    <span class="step-content">Store your data off-chain under the protection of your bubble.</span>
-                </div>
-                <div class="step">
-                    <span class="step-heading">Step 5</span>
-                    <span class="step-content">Interact with your bubble’s data and smart contract.</span>
-                </div>
-            </div>
-	    <span><b><a href="docs/whitepaper.pdf">Read the Whitepaper</a></b></span>
-            <div class="footnote">
-                <p>
-                    * Our forthcoming library will provide ready-made contracts for all sorts of use cases.
-		    Alternatively, you can request a custom contract or write your own. 
-		    A Bubble smart contract is a state machine tailored to control the life cycle of the data for the application you are building. 
-                    Use it to specify who can access the data and under what conditions. 
-                    Specify smart contract transitions to manage the data life cycle. 
-                    Use NFT contracts or on-chain oracles to control access to your data based on external events.  
-                    The possibilities are endless.
-                </p>
-                <p>
-                    † Use a cloud relay service like the Bubble Private cloud, install Bubble Protocol on your home or company server, or integrate Bubble Protocol with your existing database or infrastructure.
-                </p>
-            </div>
-            <div class="centered-section compact">
-                <span class="subtle-title">Supported Cloud Data Layers</span>
-                <div class="data-layer-images">
-                    <img class="data-layer-image" src="images/bubble-cloud-logo.png">
-                    <img class="data-layer-image" src="images/ipfs-logo.png">
-                    <img class="data-layer-image" src="images/skynet-logo.png">
+                <div class="feature-row">
+                    <div class="feature">
+                        <div class="feature-text">
+                            <span class="feature-title">Data Tokenisation</span>
+                            <span class="feature-description">Private content accessible only to token holders</span>
+                        </div>
+                        <img class="feature-image" src="images/feature-tokenisation.png" alt="">
+                    </div>
+                    <div class="feature">
+                        <div class="feature-text">
+                            <span class="feature-title">Social Media</span>
+                            <span class="feature-description">Private messaging and social media with real-time notifications</span>
+                        </div>
+                        <img class="feature-image" src="images/feature-social-media.png" alt="">
+                    </div>
+                    <div class="feature">
+                        <div class="feature-text">
+                            <span class="feature-title">Paywall</span>
+                            <span class="feature-description">Pay-per-view content and subscriptions</span>
+                        </div>
+                        <img class="feature-image" src="images/feature-paywall.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div id="uses" class="full-width-content compact h-gradient-fill">
-        <h1>Use Cases</h1>
-        <div class="use-case-grid">
-            <span class="use-case-separator"></span>
-            <div class="use-case-group">
-                <div class="use-case-group-heading-row">Developers</div>
-                <div class="use-case-row">
-                    <div class="use-case">
-                        <div class="use-case-icon-bubble">
-                            <img class="use-case-icon" src="images/icons/monitor.svg">
-                        </div>
-                        <div class="use-case-content">
-                            <span class="use-case-title">Decentralised Applications </span>
-                            <span class="use-case-description">
-                                Create a bubble for each user to store their personal data and app settings.  
-                                Use it to sync data across devices.  
-                                Read and write to your bubbles easily via a restful API confident that your smart contract will authenticate your users.
-                            </span>
-                        </div>
-                    </div>
-                    <div class="use-case">
-                        <div class="use-case-icon-bubble">
-                            <img class="use-case-icon" src="images/icons/nft.svg">
-                        </div>
-                        <div class="use-case-content">
-                            <span class="use-case-title">Data Tokenisation</span>
-                            <span class="use-case-description">
-                                Store restricted content in a bubble and make it accessible only to token holders.
-                                Use a bubble for private NFT content.
-                                Hold both private content and public discovery data in the same bubble.
-                            </span>
-                        </div>
-                    </div>
-                    <div class="use-case">
-                        <div class="use-case-icon-bubble">
-                            <img class="use-case-icon" src="images/icons/thumbs-up.svg">
-                        </div>
-                        <div class="use-case-content">
-                            <span class="use-case-title">Social Media</span>
-                            <span class="use-case-description">
-                                Create a bubble to share private social media data between friends and use it to relay posts and messages.  
-                                Let users choose their relay server and give them control over their own social media data.
-                            </span>
-                        </div>
-                    </div>
+        <div class="governance-section">
+            <div class="section-text">
+                <span class="section-title">Governance</span>
+                <span class="section-description">Bubble Protocol is an open source project. Governance token holders steer the overall project direction through quadratic voting and control of the project treasury. Token stakers earn a proportion of platform profits.</span>
+                <div class="button-row">
+                    <a href="./docs/tokenomics.pdf" target="_blank"><div class="cta-button-solid">Tokenomics</div></a>
+                    <a href="https://discord.gg/sSnvK5C" target="_blank"><div class="cta-button-hollow">Join Us</div></a>
                 </div>
             </div>
-            <span class="use-case-separator"></span>
-            <div class="use-case-group">
-                <div class="use-case-group-heading-row">Companies</div>
-                <div class="use-case-row">
-                    <div class="use-case">
-                        <div class="use-case-icon-bubble">
-                            <img class="use-case-icon" src="images/icons/user-check.png">
-                        </div>
-                        <div class="use-case-content">
-                            <span class="use-case-title">Customer Accounts</span>
-                            <span class="use-case-description">
-                                Create a bubble for each customer to hold their personal data and account settings. 
-                                Use the smart contract as their service level agreement and let the bubble manage privacy compliance and consent management for you.  
-                                Allow different clients in a supply chain to read customer data at appropriate stages of the service lifecycle.
-                            </span>
-                        </div>
-                    </div>
-                    <div class="use-case">
-                        <div class="use-case-icon-bubble">
-                            <img class="use-case-icon" src="images/icons/dollar-sign.svg">
-                        </div>
-                        <div class="use-case-content">
-                            <span class="use-case-title">Paywall</span>
-                            <span class="use-case-description">
-                                Take advantage of on-chain payments.
-				Provide access to private content on a pay-per-view or subscription basis. 
-                                Take payment directly in your bubble’s smart contract or sell an NFT to act as an access token.  
-                            </span>
-                        </div>
-                    </div>
-                    <div class="use-case">
-                        <div class="use-case-icon-bubble">
-                            <img class="use-case-icon" src="images/icons/lock.svg">
-                        </div>
-                        <div class="use-case-content">
-                            <span class="use-case-title">Web3 Innovation</span>
-                            <span class="use-case-description">
-                                Integrate Bubble Protocol into your existing data infrastructure and step lightly into Web3.
-                                Run a Web3 service in parallel with your current service using the same backend databases.
-                                Get a headstart in Web3 and experiment with the technology today.
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <span class="use-case-separator"></span>
+            <img class="governance-image" src="images/governance.png" alt="governance">
         </div>
+
+        <div class="page-width-section block">
+            <img class="section-image" src="images/screen.png" alt="screen">
+            <div class="section-text">
+                <span class="section-title">For Developers</span>
+                <span class="section-description">Build with confidence on a protocol that puts privacy first. Grant full control over data access through a hybrid Web2/Web3 solution.</span>
+                <span class="section-description">With POSIX-like access controls held in custom smart smart contracts, the protocol brings data control directly into your on-chain logic.</span>
+                <ul>
+                    <li>Private Off-Chain Storage</li>
+                    <li>Access Controls On-Chain</li>
+                    <li>Fully Customizable Controls</li>
+                    <li>Blockchain Agnostic</li>
+                    <li>Multi-User Encryption</li>
+                    <li>Real-Time Notifications</li>
+                    <li>Key Delegation</li>
+                    <li>Ideal for NFT-Controlled Storage</li>
+                </ul>
+                <div class="button-row">
+                    <a href="learn.html"><div class="cta-button-solid">Learn More</div></a>
+                    <a href="https://github.com/Bubble-Protocol/bubble-sdk" target="_blank"><div class="cta-button-hollow">SDK</div></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-width-section block">
+            <div class="section-text left">
+                <span class="section-title">For Business</span>
+                <span class="section-description">Web3 is all about privacy-by-design. Bubble Protocol bridges Web2 and Web3 to offer a simple yet powerful new technology stack for privacy innovation and personal data governance.</span>
+                <span class="section-description">Its hybrid approach allows businesses to step lightly into the world of Web3 without compromising on security.</span>
+                <ul>
+                    <li>Automate GDPR Compliance</li>
+                    <li>Web3 Customer Accounts</li>
+                    <li>Novel Payment Schemes</li>
+                    <li>On-Chain Service Level Agreements</li>
+                    <li>Keep Customer Data In-House</li>
+                    <li>Integrates With Existing Databases</li>
+                    <li>State-Of-The-Art Encryption</li>
+                </ul>
+                <div class="button-row">
+                    <a href="mailto:enquiries@bubbleprotocol.com" target="_blank"><div class="cta-button-solid">Contact Us</div></a>
+                    <a href="./docs/whitepaper.pdf" target="_blank"><div class="cta-button-hollow">White Paper</div></a>
+                </div>
+            </div>
+            <img class="section-image right" src="images/globe.png" alt="screen">
+        </div>
+
+        <div class="partners-section">
+            <img class="h-line" src="images/h-line.png">
+            <!-- <span class="section-title">Partners</span>
+            <div class="partners-list">
+                <a href="https://rehide.io" target="_blank"><img class="partner-image" src="images/partner-rehide.png" alt="partner"></a>
+            </div>
+            <img class="h-line" src="images/h-line.png"> -->
+        </div>
+
+        <div class="page-width-section">
+            <span class="section-title center">Roadmap</span>
+            <img src="images/roadmap.png" alt="hand">
+        </div>
+
+        <div class="button-row">
+            <a href="learn.html"><div class="cta-button-solid">Learn More</div></a>
+        </div>
+
+          <div id="footer"></div>
+
     </div>
     
-    <div id="features" class="full-width-content gradient-fill">
-        <h1 class="light">DApps Built On Bubble Protocol</h1>
-        <div class="feature-cards">
-	    <a href="https://bubbleprotocol.com/chat?chat=eyJmIjoiMHg1ZDRhMGVkNjlkZmQ5N2Y0MDI2MmMzOTA5NDk0ZWM3NDA2NDg5MThhIiwidCI6IjJmYWNlY2JhNWI5MDYxZWEiLCJpZCI6ImV5SmphR0ZwYmlJNk1UTTNMQ0pqYjI1MGNtRmpkQ0k2SWpCNFpqbEdNamczUldJNU9UQmhOalUzT0RSR05UazVZVE5HTlRZM01HTTRSVEUwTURjeFJqUTNNeUlzSW5CeWIzWnBaR1Z5SWpvaWQzTnpPaTh2ZG1GMWJIUXVZblZpWW14bGNISnZkRzlqYjJ3dVkyOXRMM1l5TDNCdmJIbG5iMjRpZlEifQ" target="_blank">
-		<div class="feature-card">
-                    <img class="dapp-image" src="images/hushbubble.png">
-                    <span class="feature-title">HushBubble</span>
-                    <span class="feature-description">End-to-end encrypted private chat, group chat, friend.tech chat and nft chat.</span>
-                </div>
-	    </a>
-	    <a href="https://github.com/Bubble-Protocol/audiobook" target="_blank">
-		<div class="feature-card">
-                    <img class="dapp-image" src="images/audiobook.png">
-                    <span class="feature-title">Audiobook</span>
-                    <span class="feature-description">Decentralised service for publishing and consuming audiobooks.</span>
-                </div>
-	    </a>
-        </div>
-    </div>
-
-
-    <div id="uses" class="full-width-content compact h-gradient-fill">
-        <h1>Trusted Partners</h1>
-        <div class="use-case-grid">
-            <span class="use-case-separator"></span>
-            <div class="use-case-group">
-                <div class="use-case-row">
-                    <a href="https://rehide.io" target="_blank"><img class="data-layer-image" src="images/partner-rehide.png" alt="rehide.io"></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div id="faqs" class="full-width-content">
-        <div class="faqs-content">
-            <h1>Frequently Asked Questions</h1>
-            <div class="faqs">
-                <div class="faq">
-                    <div class="faq-button"></div>
-                    <div class="faq-content">
-                        <span class="faq-title">What is Bubble Protocol?</span>
-                        <span class="faq-text hidden">
-                            Bubble Protocol is an open source project designed to allow blockchains to control private data by using off-chain storage folders called "bubbles" on private servers and on-chain smart contracts for access control. 
-                            It enables secure and customizable off-chain data management for decentralized applications, NFTs, and various services within the Web 3.0 ecosystem.
-                        </span>
-                    </div>
-                </div>
-                <div class="faq">
-                    <div class="faq-button"></div>
-                    <div class="faq-content">
-                        <span class="faq-title">How does Bubble Protocol ensure data privacy?</span>
-                        <span class="faq-text hidden">
-                            Bubble Protocol ensures data privacy through a combination of off-chain storage and on-chain access controls, which together create a secure environment for handling private data. 
-                            Data is stored in "bubbles" on private servers chosen by the user or the dApp developer. This keeps sensitive data off the blockchain and off of public storage networks, reducing the risk of exposing private information.
-                            Data is encrypted by default so that only the parties to the contract can read the data.
-                        </span>
-                    </div>
-                </div>
-                <div class="faq">
-                    <div class="faq-button"></div>
-                    <div class="faq-content">
-                        <span class="faq-title">How is Bubble Protocol decentralised?</span>
-                        <span class="faq-text hidden">
-                            Bubble Protocol achieves decentralization primarily by allowing users to select their own relay servers and through the separation of concerns between data storage and access control.  
-                            This separation allows Bubble relay servers to be very simple data storage nodes that can host any bubble for any purpose making them application agnostic.  
-                            It means relay servers are like miniature DropBox servers with no knowledge of who owns the bubbles they host or what they are used for.
-                            Since all relay servers are capable of hosting any bubble it makes it easy for users to change relay services to seek the best service.
-                        </span>
-                    </div>
-                </div>
-                <div class="faq">
-                    <div class="faq-button"></div>
-                    <div class="faq-content">
-                        <span class="faq-title">What are the advantages of using Bubble Protocol?</span>
-                        <span class="faq-text hidden">
-                            Bubble Protocol makes it simple for DApp developers to integrate authenticated off-chain data storage into their applications and has the additional benefit of being secure enough for use with confidential data.
-                            For companies, the ability to integrate Bubble Protocol into existing server infrastructure makes it easy to join Web3 or experiment with Web3 technology.
-                        </span>
-                    </div>
-                </div>
-                <div class="faq">
-                    <div class="faq-button"></div>
-                    <div class="faq-content">
-                        <span class="faq-title">How can I integrate Bubble Protocol into my project?</span>
-                        <span class="faq-text hidden">
-                            The <a target="_blank" href="https://github.com/Bubble-Protocol/bubble-sdk">Bubble SDK</a> contains client and server libraries for DApp developers and relay providers.
-                            <a target="_blank" href="https://github.com/Bubble-Protocol/bubble-tools">Bubble Tools</a> is a supplemental command line tool for all developers.  
-                            For additional help contact us by email or join our Discord server - we would be very interested to hear about your project and are always pleased to help.
-                        </span>
-                    </div>
-                </div>
-                <div class="faq">
-                    <div class="faq-button"></div>
-                    <div class="faq-content">
-                        <span class="faq-title">Are there any limitations to Bubble Protocol?</span>
-                        <span class="faq-text hidden">
-                            Currently, users and developers need to rely on private servers for data storage.  This introduces a potential point of failure depending on the chosen server.
-                            We are actively developing a decentralised relay network with Bubble Protocol's access controls built in and we encourage others to build their own services to offer users more choice.         
-                        </span>
-                    </div>
-                </div>
-            </div>
-	    <span class="center"><b><a href="docs/whitepaper.pdf">Read the Whitepaper</a></b></span>
-        </div>
-    </div>
-
-    <div id="contact" class="full-width-content compact light-fill">
-        <div class="contact">
-            <h1>Contact Us</h1>
-            <div class="mailing-list">
-                <span>Join our mailing list to keep up-to-date with developments.</span>
-                <div class="email-frame">
-                    <div class="h-table">
-                        <input id="email" name="email" class="text-box" type="text" placeholder="Enter Email" onkeyup="validateEmail(event)"></input>
-                        <div id="join-button" class="contact-button disabled" onclick="joinEmailList()">Get Updates</div>
-                        <span id="thankyou-for-joining-text" class="small-text hidden">Thank you!  We'll be in touch soon.</span>
-                        <span id="something-went-wrong-text" class="small-text hidden">Something went wrong. Please try again later.</span>
-                    </div>
-                    <div id="recaptcha-notice" class="recaptcha-notice">
-                        Protected by Google reCAPTCHA<br/>
-                        <a href="https://policies.google.com/privacy">Privacy Policy</a> and
-                        <a href="https://policies.google.com/terms">Terms of Service</a> apply.
-                    </div>
-                </div>
-            </div>
-            <div class="discord-frame">
-                <a target="_blank" href="https://discord.gg/sSnvK5C"><img class="discord-icon" src="images/icons/discord.svg"></a>
-                <span>Or join our <a target="_blank" href="https://discord.gg/sSnvK5C">discord server</a> to get involved.</span>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer">
-        <div class="footer-row">
-            <div class="footer-left">
-                <a class="footer-link" target="_blank" href="docs/whitepaper.pdf">Whitepaper</a>
-                <a class="footer-link" target="_blank" href="https://github.com/bubble-protocol">Github</a>
-                <a class="footer-link" target="_blank" href="https://datona-lib.readthedocs.io/en/latest/index.html">Documentation</a>
-            </div>
-            <div class="footer-right">
-                <a class="footer-link" href="mailto://enquiries@bubbleprotocol.com">Email Us</a>
-                <a class="footer-link" target="_blank" href="https://twitter.com/bubbleprotocol">Twitter</a>
-                <a class="footer-link" target="_blank" href="https://discord.gg/sSnvK5C">Discord</a>
-            </div>
-        </div>
-        <span class="copyright">© 2023 Bubble Protocol. All rights reserved.</span>
-    </div>
-
-    <script type="application/javascript">
-        initialise();
-    </script>
 
 </body>
 </html>
