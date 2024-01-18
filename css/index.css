@@ -173,6 +173,7 @@ table .logo {
   flex-direction: column;
   align-items: flex-start;
   overflow-y: scroll;
+  padding-bottom: 32px;
 }
 
 .mobile-menuitems {
