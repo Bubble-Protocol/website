@@ -29,6 +29,11 @@ a.image-link {
   line-height: 0;
 }
 
+a.text-link, a.text-link.visited {
+  color: #00A0DD;
+  font-weight: bold;
+}
+
 h1 {
   font-size: 32px;
   line-height: 40px;

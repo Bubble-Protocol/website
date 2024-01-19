@@ -57,7 +57,10 @@
           <span class="section-title">Bubbles</span>
           <div class="section-paragraphs">
             <p>
-              Bubble Protocol stores content in off-chain bubbles. A bubble is a secure vault containing files and directories whose access permissions are managed by a smart contract.  The bubble itself is hosted by a provider chosen by the user. Whenever content is requested from the bubble, the provider checks the access permissions from the smart contract, only permitting the request if the requester has the appropriate permissions. 
+              Bubble Protocol stores content in off-chain bubbles. 
+              A bubble is a secure vault containing files and directories whose access permissions are managed by a smart contract.  
+              The bubble itself is hosted by a provider chosen by the user (see <a class="text-link" href="#providers">Bubble Providers</a>). 
+              Whenever content is requested from the bubble, the protocol checks the access permissions from the smart contract, only permitting the request if the requester has the appropriate permissions. 
             </p>
             <p>
               The smart contract for a bubble is designed specifically for each use case and can be as simple or as complex as needed to control the content throughout its life.  Once the smart contract indicates the bubble has been terminated, the off-chain bubble is ‘popped’ and all its content is deleted.
@@ -83,36 +86,34 @@
         </div>
 
         <div class="page-width-section">
-          <span class="section-title">Bubble Providers</span>
+          <span id="providers" class="section-title">Bubble Providers</span>
           <div class="section-paragraphs">
             <p>
               Bubbles are stored on a provider of the user’s choosing.
-              Providers can be public, restricted or private.</p>
-            <ul>
-              <li>
-                <b>Public providers</b> are designed to be generic hosts, capable of hosting any bubble for any application. 
-                Forthcoming Bubble payment contracts will allow providers to earn rewards for providing storage to general users.  
-                See the <a href="docs/tokenomics.pdf" target="_blank">Tokenomics White Paper</a>.
-              </li>
-              <li><b>Restricted providers</b> are public providers that restrict the type of bubble that can be deployed, only allowing bubbles managed by certain types of smart contract.</li>
-              <li><b>Private providers</b> restrict access to authorised users only. Examples are: </li>
-              <ul>
-                <li><b>Home providers</b> used only by family and friends.</li>
-                <li><b>Company providers</b> used by registered customers, employees and suppliers.</li>
-              </ul>
-            </ul>
-            <blockquote><i>
-              The Bubble Network, currently under construction, will be a fully decentralised public provider.  
-              See <a href="#bubble-network"><b>Bubble Network</b></a>.
-            </i></blockquote>
+            </p>
             <p>
-              Anyone can become a bubble provider by deploying a server running Bubble Protocol’s open-source Guardian software or by integrating the Guardian into existing infrastructure.
+              By design, Bubble Protocol specifies the protocol for how bubble content is protected, not how the bubble is stored.
+              This means the protocol can be used with private servers, public cloud servers or decentralised peer-to-peer storage networks, and can support one or multiple blockchains:
+            </p>
+            <ul>
+              <li>The <a class="text-link" href="https://vault.bubbleprotocol.com" target="_blank">Bubble Private Cloud</a> is a public cloud provider run by Bubble Protocol that supports multiple blockchains.</li>
+              <li>The <b>Bubble Cloud Cooperative</b> is a social movement to bring independent cloud storage providers together into a cooperating network to improve redundancy and decentralisation.</li>
+              <li>The <a class="text-link" href="#bubble-network">Bubble Network</a> will be a decentralised peer-to-peer network with Bubble Protocol built in.</li>
+              <li><b>Home providers</b> can provide private bubble storage exclusively for family and friends.</li>
+              <li>
+                <b>Company providers</b> can use existing business infrastructure exclusively for registered customers, employees and suppliers. 
+                This approach allows data to be kept in-house, enabling Web3 capabilities without compromising on security or reinventing company infrastructure.
+              </li>
+            </ul>
+            <p>
+              Anyone can become a bubble provider by deploying a server running Bubble Protocol’s open-source Guardian library or by integrating the Guardian into existing infrastructure.
               The Guardian acts as a gateway to the underlying bubble storage layer, authorising requests based on the permissions defined in the bubble’s smart contract.
-              The Guardian does not specify the underlying storage mechanism, allowing the protocol to be used with file systems, databases, decentralised storage networks, content delivery networks and other infrastructure.
+              The Guardian does not specify the underlying storage mechanism, allowing the protocol to be used with file systems, databases, content delivery networks, object storage systems, archival storage services and other infrastructure.
             </p>
           </div>
           <div class="button-row">
-            <a href="https://github.com/Bubble-Protocol/bubble-sdk/tree/main/packages/server" target="_blank"><div class="cta-button-hollow">Deploy Your Own</div></a>
+            <a href="https://github.com/Bubble-Protocol/trivial-bubble-server" target="_blank"><div class="cta-button-solid">Deploy Your Own</div></a>
+            <a href="https://github.com/Bubble-Protocol/bubble-sdk/tree/main/packages/server" target="_blank"><div class="cta-button-hollow">Integrate</div></a>
           </div>
         </div>
 
