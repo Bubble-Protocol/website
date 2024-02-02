@@ -1,5 +1,5 @@
 
-body {
+body, #body {
   margin: 0;
   font-family: 'Montserrat', 'Arial', sans-serif;
   font-style: normal;
@@ -358,6 +358,10 @@ table .logo {
   border-radius: 8px;
   font-size: 22px;
   padding: 8px 16px;
+}
+
+.cta-button-solid:hover, .cta-button-hollow:hover {
+  cursor: pointer;
 }
 
 .cta-button-solid {
@@ -957,6 +961,12 @@ table .logo {
 }
 
 @media screen and (max-width: 800px) {
+  .header .menubar {
+    display: none;
+  }
+  .header .mobile-menubar {
+    display: flex;
+  }
   .hero-section {
     display: block;
     position: relative;
@@ -1015,12 +1025,6 @@ table .logo {
 @media screen and (max-width: 640px) {
   .hero-section, .page-width-section, .footer {
     padding: 0 32px;
-  }
-  .header .menubar {
-    display: none;
-  }
-  .header .mobile-menubar {
-    display: flex;
   }
   .full-width-section {
     display: block;
