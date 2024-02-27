@@ -615,6 +615,14 @@ table .logo {
 }
 
 
+/* Roadmap Section */
+
+.roadmap-image {
+  width: 100%;
+  max-width: 1024px;
+  align-self: center;
+}
+
 /* Page Width Sections */
 
 .page-width-section {
