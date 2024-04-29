@@ -4,6 +4,7 @@ $(function() {
   $("#footer").load("footer.html");
   const page = document.getElementById('page');
   page.addEventListener("scroll", animate);
+  animatePartnersCarousel();
 })
 
 
@@ -24,4 +25,32 @@ function animate() {
       reveals[i].classList.remove("animation-active");
     }
   }
+}
+
+
+/**
+ * Partners carousel
+ */
+
+function animatePartnersCarousel() {
+  $('.partners-carousel').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    arrows: false,
+    dots: false,
+      pauseOnHover: false,
+      responsive: [{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3
+      }
+    }, {
+      breakpoint: 520,
+      settings: {
+        slidesToShow: 2
+      }
+    }]
+  });
 }

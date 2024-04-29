@@ -594,7 +594,12 @@ table .logo {
   max-width: 1400px;
   width: 100%;
   gap: 48px;
-  padding: 48px 0;
+  padding: 48px 16px;
+}
+
+.partners-section .row {
+  overflow: hidden;
+  flex-direction: row;
 }
 
 .partners-section .h-line {
@@ -602,18 +607,142 @@ table .logo {
   width: 100%;
 }
 
-.partners-section .partners-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 32px;
+.partners-section .carousel-container {
+  overflow: inherit;
+  width: 100%;
+  padding: 32px 16px 0;
 }
 
-.partners-section .partner-image {
-  width: 200px;
+.partners-section .partners-carousel {
+  overflow: inherit;
+  width: 100%;
+}
+
+/* Carousel */
+
+.partners-section .slick-slide {
+  margin: 0px 20px;
+}
+
+.partners-section .slick-slide img {
+  width: 160px;
   border-radius: 8px;
 }
 
+.partners-section .slick-slider
+{
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.partners-section .slick-list
+{
+  position: relative;
+  display: block;
+  overflow: hidden;
+
+  margin: 0;
+  padding: 0;
+}
+.partners-section .slick-list:focus
+{
+  outline: none;
+}
+.partners-section .slick-list.dragging
+{
+  cursor: pointer;
+  cursor: hand;
+}
+
+.partners-section .slick-slider .slick-track,
+.partners-section .slick-slider .slick-list
+{
+  -webkit-transform: translate3d(0, 0, 0);
+     -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+       -o-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.partners-section .slick-track
+{
+  position: relative;
+  top: 0;
+  left: 0;
+
+  display: block;
+}
+.partners-section .slick-track:before,
+.partners-section .slick-track:after
+{
+  display: table;
+
+  content: '';
+}
+.partners-section .slick-track:after
+{
+  clear: both;
+}
+.partners-section .slick-loading .slick-track
+{
+  visibility: hidden;
+}
+
+.partners-section .slick-slide
+{
+  display: none;
+  float: left;
+
+  height: 100%;
+  min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+  float: right;
+}
+.partners-section .slick-slide img
+{
+  display: block;
+}
+.partners-section .slick-slide.slick-loading img
+{
+  display: none;
+}
+.partners-section .slick-slide.dragging img
+{
+  pointer-events: none;
+}
+.partners-section .slick-initialized .slick-slide
+{
+  display: block;
+}
+.partners-section .slick-loading .slick-slide
+{
+  visibility: hidden;
+}
+.partners-section .slick-vertical .slick-slide
+{
+  display: block;
+
+  height: auto;
+
+  border: 1px solid transparent;
+}
+.partners-section .slick-arrow.slick-hidden {
+  display: none;
+}
 
 /* Roadmap Section */
 
