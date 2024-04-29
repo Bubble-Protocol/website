@@ -179,6 +179,9 @@ table .logo {
   align-items: flex-start;
   overflow-y: scroll;
   padding-bottom: 32px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
 }
 
 .mobile-menuitems {
@@ -318,6 +321,13 @@ table .logo {
 .header .dropdown-link:hover {
   background-color: #f2f2f2;
   cursor: pointer;
+}
+
+.header .dropdown-box hr {
+  width: 100%;
+  box-sizing: border-box;
+  border-color: #ccc;
+  border-top: none;
 }
 
 .header a, .header a:visited {
