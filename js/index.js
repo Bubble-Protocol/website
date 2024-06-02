@@ -4,7 +4,7 @@ $(function() {
   $("#footer").load("footer.html");
   const page = document.getElementById('page');
   page.addEventListener("scroll", animate);
-  animatePartnersCarousel();
+  animateCarousels();
 })
 
 
@@ -32,8 +32,8 @@ function animate() {
  * Partners carousel
  */
 
-function animatePartnersCarousel() {
-  $('.partners-carousel').slick({
+function animateCarousels() {
+  $('.carousel').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
