@@ -1011,6 +1011,11 @@ table .logo {
   font-weight: bold;
 }
 
+.footer .copyright {
+  font-size: 16px;
+  color: #686666;
+  align-self: center;
+}
 
 /* Responsive */
 
